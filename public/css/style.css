@@ -1,3 +1,19 @@
+.bar-top-page {
+  height: 25px; }
+
+.bar-top-page-content {
+  color: #fff;
+  text-align: right;
+  font-size: 12px; }
+  .bar-top-page-content a {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 12px; }
+  .bar-top-page-content a:hover {
+    color: #cc0d1f;
+    text-decoration: underline;
+    font-size: 12px; }
+
 #logo {
   margin: 30px 0px; }
   #logo h1 {
@@ -26,5 +42,26 @@
         background-color: #96000e;
         padding: 10px 3px;
         text-decoration: none; }
+
+#product {
+  margin-top: 10px;
+  min-height: 271px; }
+  #product p {
+    text-align: center;
+    text-transform: uppercase; }
+  #product .description {
+    color: #666; }
+  #product .price {
+    color: #ce0e1d;
+    font-weight: bold;
+    font-size: 20px; }
+
+.thumb img {
+  border: 1px solid #dfdedc;
+  padding: 20px; }
+
+footer {
+  height: 30px;
+  background-color: #96000e; }
 
 /*# sourceMappingURL=style.css.map */

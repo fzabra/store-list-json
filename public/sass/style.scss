@@ -1,6 +1,24 @@
 body{
     
 }
+.bar-top-page{
+    height: 25px;
+}
+.bar-top-page-content{
+    color:#fff;
+    text-align: right;
+    font-size: 12px;
+    a{
+        color:#fff;
+        text-decoration: underline;
+        font-size: 12px;
+    }
+    a:hover{
+       color: #cc0d1f;
+       text-decoration: underline;
+       font-size: 12px;
+    }
+}
 #logo{
     margin: 30px 0px;
     h1{
@@ -35,4 +53,31 @@ body{
             }
         }
     }
+}
+#product{
+    margin-top: 10px;
+    min-height: 271px;
+    p{
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .description{
+        color:#666;
+    }
+    .price{
+        color:#ce0e1d;
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
+.thumb{
+    img {
+        border: 1px solid #dfdedc;
+        padding: 20px;
+    }
+}
+
+footer{
+    height: 30px;
+    background-color: #96000e;
 }
