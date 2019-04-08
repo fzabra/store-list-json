@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 body{
-    
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 .bar-top-page{
     height: 25px;
@@ -53,6 +55,40 @@ body{
             }
         }
     }
+}
+.title-page{
+    margin-top: 60px;
+    h1{
+        border-bottom: 1px solid #dfdedc;
+        color: #cc0d1f;
+        font-weight: lighter;
+        padding-bottom: 10px;
+    }
+    label{
+        font-size: 14px;
+        font-weight: bold;
+        float: left;
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+    select{
+        float: left;
+        width: 270px;  
+    }
+}
+.choose-icon-nav{
+    padding-top: 7px;
+    padding-left: 20px;
+    color: #86bbbf;
+    a{
+        color: #808186;
+    }
+    a:hover{
+        color: #86bbbf
+    }
+}
+.select-filter{
+    padding-left: 67px;
 }
 #product{
     margin-top: 10px;

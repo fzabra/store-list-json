@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Webjump - Desafio Frontend</title>
   </head>
@@ -19,11 +20,20 @@
             <h1>WebJump!</h1>
         </div>
       </div>
-      <div class="navbar main-menu">
-        <div class="container" id="menu">
-          <ul>
-            <li><a href="#">Página Inicial</a></li>
-          </ul>
+      <div class="main-menu">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light main-menu">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div id="menu">
+                <ul class="navbar-nav mr-auto">
+                  <li><a href="#">Página Inicial</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         </div>
       </div>
     </header>
@@ -32,7 +42,32 @@
         <div class="row">
           <div class="col-md-2"></div>
           <div class="col-md-10">
-              <div id="products" class="row"></div>
+            <div class="title-page col-md-12">
+              <h1>Sapatos</h1>
+              <div class="row">
+                <div class="col-md-6 choose-icon-nav">
+                  <i class="fas fa-th"></i>
+                  <a href="#"><i class="fas fa-th-list"></i></a>
+                </div>
+                <div class="col-md-6 select-filter">
+                  <label>ORDENAR POR</label>
+                  <select class="form-control">
+                    <option>Preço</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <hr style="margin: 5px 15px 0px 15px;">
+            <div id="products" class="row"></div>
+            <nav class="nav justify-content-center">
+              <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
