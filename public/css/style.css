@@ -1,6 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
-body {
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif; }
+.breadcrumb, .pagination {
+  background-color: #fff;
+  font-size: 12px;
+  margin-left: -13px; }
+  .breadcrumb a, .pagination a {
+    color: #000000; }
+  .breadcrumb a:hover, .pagination a:hover {
+    color: #ce0e1d; }
+
+.breadcrumb-item.active {
+  color: #ce0e1d;
+  font-weight: bold; }
+
+.navbar-toggler {
+  border: 0px; }
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(0, 0, 0, 1)' stroke-width='4' stroke-linecap='square' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>"); }
 
 .bar-top-page {
   height: 25px; }
@@ -8,7 +24,8 @@ body {
 .bar-top-page-content {
   color: #fff;
   text-align: right;
-  font-size: 12px; }
+  font-size: 12px;
+  padding-top: 2px; }
   .bar-top-page-content a {
     color: #fff;
     text-decoration: underline;
@@ -31,11 +48,13 @@ body {
   background-color: #cc0d1f; }
   .main-menu ul {
     list-style: none;
-    margin: 0px 0px 0px -60px;
+    margin: 0px 0px 0px -35px;
     text-align: left; }
     .main-menu ul li {
       display: inline;
       text-transform: uppercase;
+      font-weight: 700;
+      font-style: normal;
       color: white;
       margin-left: 20px; }
       .main-menu ul li a {
@@ -47,22 +66,26 @@ body {
         padding: 10px 3px;
         text-decoration: none; }
 
-.title-page {
-  margin-top: 60px; }
-  .title-page h1 {
-    border-bottom: 1px solid #dfdedc;
-    color: #cc0d1f;
-    font-weight: lighter;
-    padding-bottom: 10px; }
-  .title-page label {
-    font-size: 14px;
-    font-weight: bold;
-    float: left;
-    padding-right: 10px;
-    padding-top: 10px; }
-  .title-page select {
-    float: left;
-    width: 270px; }
+.main-menu-responsive {
+  background-color: #cc0d1f !important; }
+
+.title-page h1 {
+  border-bottom: 1px solid #dfdedc;
+  color: #cc0d1f;
+  font-weight: lighter;
+  padding-bottom: 10px; }
+.title-page label {
+  font-size: 13px;
+  font-weight: bold;
+  float: left;
+  padding-right: 10px;
+  padding-top: 10px; }
+.title-page select {
+  float: left;
+  width: 270px; }
+
+.menu-categories {
+  border: #dfdedc 1px solid; }
 
 .choose-icon-nav {
   padding-top: 7px;
@@ -83,11 +106,20 @@ body {
     text-align: center;
     text-transform: uppercase; }
   #product .description {
-    color: #666; }
+    color: #666;
+    font-size: 20px;
+    font-weight: 200; }
   #product .price {
     color: #ce0e1d;
     font-weight: bold;
     font-size: 20px; }
+  #product button {
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #86bbbf;
+    border: none; }
+  #product button:hover {
+    background-color: #328b84; }
 
 .thumb img {
   border: 1px solid #dfdedc;
@@ -96,5 +128,52 @@ body {
 footer {
   height: 30px;
   background-color: #96000e; }
+
+@media only screen and (max-width: 768px) and (min-width: 426px) {
+  #product {
+    margin-top: 0px; }
+    #product .description {
+      font-size: 15px;
+      font-weight: 200; }
+
+  button.navbar-toggler {
+    display: none; }
+
+  .navbar-nav {
+    flex-direction: inherit; } }
+@media only screen and (max-width: 425px) {
+  main {
+    margin-top: -80px; }
+
+  .main-page-responsive {
+    margin-top: 0px !important; }
+
+  .main-menu {
+    background-color: #fff; }
+    .main-menu ul {
+      list-style: none;
+      margin: 0px 0px 40px 0px;
+      text-align: left; }
+      .main-menu ul li a {
+        font-size: xx-large; }
+      .main-menu ul li a:hover {
+        font-size: xx-large; }
+
+  .title-page {
+    margin-top: 20px; }
+
+  .navbar-light .navbar-toggler {
+    position: relative;
+    top: -90px;
+    left: -30px; }
+
+  #logo {
+    margin-left: 100px; } }
+@media only screen and (max-width: 375px) {
+  #logo {
+    margin-left: 75px; } }
+@media only screen and (max-width: 374px) and (min-width: 320px) {
+  #logo {
+    margin-left: 50px; } }
 
 /*# sourceMappingURL=style.css.map */
