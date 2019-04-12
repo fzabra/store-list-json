@@ -19,6 +19,11 @@
         <div id="logo">
             <h1>WebJump!</h1>
         </div>
+        <div class="search">
+            <input type="text" class="form-control input-sm" maxlength="64" placeholder="Busca" />
+             <button type="submit" class="btn btn-search btn-sm"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
       </div>
       <div class="main-menu">
         <div class="container">
@@ -48,7 +53,7 @@
               </ol>
             </nav>
           </div>
-          <div class="col-md-2 col-sm-12">
+          <div class="col-md-3 col-sm-12">
             <div class="menu-categories">
               <h4>Filtre Por</h4>
               <h5>Categorias</h5>
@@ -58,29 +63,43 @@
                 <li>Regata</li>
               </ul>
               <h5>Cores</h5>
-              <ul>
-                <li>Regata</li>
-                <li>Manga Longa</li>
-                <li>Regata</li>
+              <ul class="menuColor">
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
               </ul>
-
+              <h5>Tipo</h5>
+              <ul>
+                <li>Corrida</li>
+                <li>Caminhada</li>
+                <li>Casual</li>
+                <li>Social</li>
+              </ul>
             </div>
           </div>
-          <div class="col-md-10 col-sm-12">
+          <div class="col-md-9 col-sm-12">
             <div class="title-page col-md-12" id="titlePage">
               <h1></h1>
-              <!-- <div class="row">
-                <div class="col-md-6 choose-icon-nav">
+              <div class="row">
+                <div class="col-md-2 col-sm-12 choose-icon-nav">
                   <i class="fas fa-th"></i>
                   <a href="#"><i class="fas fa-th-list"></i></a>
                 </div>
-                <div class="col-md-6 select-filter">
-                  <label>ORDENAR POR</label>
-                  <select class="form-control">
-                    <option>Preço</option>
-                  </select>
+                <div class="col-md-10 col-sm-12 select-filter">
+                  <form>
+                    <div class="form-group row"> 
+                      <label class="col-sm-6 control-label">ORDENAR POR </label> 
+                      <div class="col-sm-6"> 
+                        <select class="form-control">
+                          <option value="1">Maior Preço</option>
+                          <option value="2">Menor Preço</option>
+                          <option value="3">Mais Vendidos</option>
+                        </select> 
+                      </div> 
+                    </div>
+                  </form>
                 </div>
-              </div> -->
+              </div>
             </div>
             <hr style="margin: 5px 15px 0px 15px;">
             <div id="products" class="row"></div>
@@ -101,6 +120,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <!-- <script src="assets/js/mains.js"></script> -->
     <script src="assets/js/actions.js"></script>
   </body>
 </html>
