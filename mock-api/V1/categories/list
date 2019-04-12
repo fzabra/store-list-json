@@ -1,6 +1,11 @@
 {
   "items": [
     {
+      "id": 0,
+      "name": "Home",
+      "path": "camisetas"
+    },
+    {
       "id": 1,
       "name": "Camisetas",
       "path": "camisetas"
